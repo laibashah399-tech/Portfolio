@@ -2,7 +2,7 @@
 const CONFIG = {
   email: "laibasyed993@gmail.com",
   github: "https://github.com/laibashah399-tech", // e.g. "https://github.com/username"
-  linkedin: "", // e.g. "https://linkedin.com/in/username"
+  linkedin: "https://www.linkedin.com/in/laiba-batool-407595442/", // e.g. "https://linkedin.com/in/username"
   // Easiest option: get a free access key at web3forms.com (enter your email, key arrives instantly) and paste it here.
   web3formsKey: "86c73490-fc38-4ae5-9daa-e26bc81ace41",
   // Used only if web3formsKey is empty (needs a one-time email activation).
@@ -325,7 +325,7 @@ function setupHero() {
     if (!triedPlaceholder) {
       triedPlaceholder = true;
       img.alt = "Profile photo placeholder";
-      img.src = "assets/images/profile-placeholder.svg";
+      img.src = "assets/images/profile.jpg.png";
     } else ring.classList.add("no-img");
   });
   if (img.complete && img.naturalWidth === 0)
