@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laiba Batool | Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Laiba Batool, a Computer Science graduate and frontend developer who builds responsive interfaces with HTML, CSS, JavaScript and Tailwind CSS."
+    />
+    <meta property="og:title" content="Laiba Batool | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Projects, skills and education of Laiba Batool, BS Computer Science graduate."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/profile.jpg" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%237c5cff'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif'%3ELB%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <canvas id="bg" aria-hidden="true"></canvas>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="nav" id="nav">
+      <div class="wrap nav-in">
+        <a href="#home" class="brand">Laiba Batool</a>
+        <button
+          class="burger"
+          id="burger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="menu" class="menu" aria-label="Main">
+          <a href="#home">Home</a><a href="#about">About</a
+          ><a href="#skills">Skills</a><a href="#education">Education</a
+          ><a href="#projects">Projects</a><a href="#services">Services</a
+          ><a href="#achievements">Achievements</a
+          ><a href="#contact">Contact</a>
+          <a class="btn sm" href="assets/files/Laiba-Batool-CV.pdf" download
+            >Resume</a
+          >
+          <button
+            class="icon-btn"
+            id="theme"
+            aria-label="Toggle light and dark mode"
+          >
+            ◐
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="glow g1"></div>
+        <div class="glow g2"></div>
+        <div id="dots" aria-hidden="true"></div>
+        <div class="wrap hero-grid">
+          <div class="hero-text">
+            <p class="hello a1">Hello, I'm</p>
+            <h1 class="a2">Laiba Batool</h1>
+            <p class="roles a3"><span id="role"></span><i class="caret"></i></p>
+            <p class="intro a4">
+              Frontend developer who turns designs into fast, responsive and
+              good-looking websites and interfaces using HTML, CSS, JavaScript
+              and Tailwind CSS.
+            </p>
+            <div class="cta a5">
+              <a class="btn" href="#projects">Explore My Projects</a>
+              <a
+                class="btn ghost"
+                href="assets/files/Laiba-Batool-CV.pdf"
+                download
+                >Download Resume</a
+              >
+              <a class="link" href="#contact">Contact Me</a>
+            </div>
+            <div class="social a5" id="social-hero"></div>
+          </div>
+          <div class="hero-art a3">
+            <span class="orbit" aria-hidden="true"></span>
+            <div class="photo-ring">
+              <img
+                id="profile"
+                src="assets/images/profile.jpg"
+                alt="Portrait of Laiba Batool"
+                width="360"
+                height="360"
+              /><span class="ph-fallback" aria-hidden="true">LB</span>
+            </div>
+            <span class="badge b-1">HTML</span><span class="badge b-2">CSS</span
+            ><span class="badge b-3">JavaScript</span
+            ><span class="badge b-4">Tailwind</span
+            ><span class="badge b-5">Responsive</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="wrap">
+          <h2 class="rv">About me</h2>
+          <div class="two">
+            <div class="rv">
+              <p>
+                I'm a frontend developer with a BS in Computer Science from
+                Hazara University Mansehra. I build the part of a website people
+                actually see and use: clean layouts, smooth interactions and
+                pages that look right on every screen.
+              </p>
+              <p>
+                I work with HTML, CSS, JavaScript and Tailwind CSS, and I learn
+                best by building real interfaces, from dashboards to small
+                interactive tools like a currency converter. I care about tidy
+                code, accessibility and attention to detail.
+              </p>
+            </div>
+            <div class="cards2 rv">
+              <div class="glass">
+                <b>Frontend Developer</b><span>HTML, CSS, JS</span>
+              </div>
+              <div class="glass">
+                <b>Tailwind CSS</b><span>Utility-first styling</span>
+              </div>
+              <div class="glass">
+                <b>Responsive Design</b><span>Mobile to desktop</span>
+              </div>
+              <div class="glass">
+                <b>3.56 / 4.00</b><span>CGPA, BS Computer Science</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="wrap">
+          <h2 class="rv">Skills</h2>
+          <p class="sub rv">Technologies I work with, grouped by area.</p>
+          <div class="grid3" id="skill-grid"></div>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="wrap">
+          <h2 class="rv">Education</h2>
+          <div class="timeline">
+            <article class="glass rv">
+              <time>2021 – 2025</time>
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p>Hazara University Mansehra · Final CGPA 3.56/4.00</p>
+              <ul class="chips">
+                <li>Data Structures</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Software Engineering</li>
+                <li>Parallel &amp; Distributed Computing</li>
+                <li>Information Security &amp; Computer Networks</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="wrap">
+          <h2 class="rv">Projects</h2>
+          <p class="sub rv">Select a filter, or open a project for details.</p>
+          <div
+            class="filters"
+            id="filters"
+            role="group"
+            aria-label="Filter projects"
+          ></div>
+          <div class="grid2" id="project-grid"></div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="wrap">
+          <h2 class="rv">Services</h2>
+          <div class="grid3">
+            <article class="glass rv">
+              <span class="ico">🖥️</span>
+              <h3>Responsive Websites</h3>
+              <p>Clean, mobile-friendly websites that work on every screen.</p>
+            </article>
+            <article class="glass rv">
+              <span class="ico">🎨</span>
+              <h3>Tailwind CSS UI</h3>
+              <p>Fast, consistent interfaces styled with Tailwind CSS.</p>
+            </article>
+            <article class="glass rv">
+              <span class="ico">📊</span>
+              <h3>Dashboard Interfaces</h3>
+              <p>
+                Clear admin and dashboard layouts with tables, forms and cards.
+              </p>
+            </article>
+            <article class="glass rv">
+              <span class="ico">⚡</span>
+              <h3>Interactive JavaScript</h3>
+              <p>
+                Useful features such as converters, filters, forms and
+                animations.
+              </p>
+            </article>
+            <article class="glass rv">
+              <span class="ico">✨</span>
+              <h3>Redesign &amp; UI Improvements</h3>
+              <p>Refreshing existing pages for clarity and usability.</p>
+            </article>
+            <article class="glass rv">
+              <span class="ico">🚀</span>
+              <h3>Landing Pages</h3>
+              <p>Focused, quick-loading pages for businesses and campaigns.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements">
+        <div class="wrap">
+          <h2 class="rv">Achievements</h2>
+          <div class="grid3" id="ach">
+            <article class="glass rv">
+              <span class="ico">🏅</span>
+              <h3>Full Merit Scholarship</h3>
+              <p>Awarded during college.</p>
+            </article>
+            <article class="glass rv">
+              <span class="ico">💻</span>
+              <h3>Prime Minister's Laptop Award</h3>
+              <p>Recognised for academic performance.</p>
+            </article>
+            <article class="glass rv">
+              <span class="ico">🎓</span>
+              <h3>BS Computer Science</h3>
+              <p>Completed with a CGPA of 3.56/4.00.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume">
+        <div class="wrap">
+          <div class="glass resume rv">
+            <div>
+              <h2>Resume</h2>
+              <p>A one-page summary of my education, skills and projects.</p>
+            </div>
+            <div class="cta">
+              <a class="btn" href="assets/files/Laiba-Batool-CV.pdf" download
+                >Download Resume</a
+              ><a
+                class="btn ghost"
+                href="assets/files/Laiba-Batool-CV.pdf"
+                target="_blank"
+                rel="noopener"
+                >View Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="wrap">
+          <h2 class="rv">Contact</h2>
+          <p class="sub rv">
+            Have an opportunity or a question? Send me a message.
+          </p>
+          <div class="two">
+            <div class="rv info">
+              <p><b>Email</b><br /><a id="c-email" href="#"></a></p>
+              <p><b>Location</b><br />Pakistan</p>
+              <div class="social" id="social-contact"></div>
+            </div>
+            <form id="form" class="glass rv" novalidate>
+              <label
+                >Name<input name="name" autocomplete="name" required /><small
+                  class="err"
+                  aria-live="polite"
+                ></small
+              ></label>
+              <label
+                >Email<input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required /><small class="err" aria-live="polite"></small
+              ></label>
+              <label
+                >Subject<input name="subject" required /><small
+                  class="err"
+                  aria-live="polite"
+                ></small
+              ></label>
+              <label
+                >Message<textarea name="message" rows="5" required></textarea
+                ><small class="err" aria-live="polite"></small
+              ></label>
+              <input
+                class="hp"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+              <button class="btn" type="submit">Send Message</button>
+              <p id="status" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap foot-in">
+        <div>
+          <b>Laiba Batool</b>
+          <p>Building clean, useful web experiences.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="#about">About</a><a href="#projects">Projects</a
+          ><a href="#contact">Contact</a>
+        </nav>
+        <div class="social" id="social-foot"></div>
+      </div>
+      <p class="copy">
+        © <span id="year"></span> Laiba Batool. All rights reserved.
+      </p>
+    </footer>
+    <button id="top" class="top" aria-label="Back to top">↑</button>
+
+    <dialog id="modal" aria-labelledby="m-title">
+      <button class="close" id="m-close" aria-label="Close">×</button>
+      <h3 id="m-title"></h3>
+      <p id="m-desc"></p>
+      <ul class="chips" id="m-feat"></ul>
+      <ul class="chips tech" id="m-tech"></ul>
+      <div class="cta" id="m-links"></div>
+    </dialog>
+    <script src="js/script.js"></script>
+  </body>
+</html>
